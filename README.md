@@ -9,3 +9,4 @@ Resources Used:
 Lingua Latina Per Se Illustra Pars I by Hans Ørberg (Capitulum I only)
 Magbinisaya Kita Primer I by Jessie Grace U. Rubrico, PhD
 ChatGPT for grammar corrections and consulation on the writing.
+Free Vector Maps, for the Maps of the World
