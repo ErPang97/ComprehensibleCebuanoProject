@@ -1,3 +1,7 @@
+header, footer {
+    display: block;
+}
+
 body {
     background-color: #f5ebeb;
     width: 90%;
