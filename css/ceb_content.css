@@ -1,4 +1,26 @@
-img {
-    width: 1200px; 
-    height: 900px;
+body {
+    background-color: #f5ebeb;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+
+#content {
+    overflow: auto;
+}
+
+.column1, .column2{
+    min-width: 450px;
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+.column2 {
+    font-size: 18pt;
+    margin-right: 0%;
 }
