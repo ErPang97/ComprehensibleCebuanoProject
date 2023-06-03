@@ -22,7 +22,7 @@ header {
 
 
 .content {
-    font-size: 18pt;
+    font-size: 16pt;
     overflow: auto;
     /* background-color: #2cae66; */
     margin: 20px auto 20px auto;
@@ -39,9 +39,6 @@ header {
     float: left;
 }
 
-.column2 {
-    font-size: 18pt;
-}
 
 #nav {
     background-color: rgb(70, 143, 207);
