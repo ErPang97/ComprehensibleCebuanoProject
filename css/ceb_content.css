@@ -20,7 +20,6 @@ header {
     padding: 10px;
 }
 
-
 .content {
     font-size: 16pt;
     overflow: auto;
@@ -39,6 +38,15 @@ header {
     float: left;
 }
 
+.single-column{
+    text-align: center;
+    /* width: 920px; */
+}
+
+.wide {
+    margin: 35px;
+    width: 900px;
+}
 
 #nav {
     background-color: rgb(70, 143, 207);
