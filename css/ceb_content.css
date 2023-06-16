@@ -5,68 +5,118 @@ header, footer {
 body {
     font-family: sans-serif;
     color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    background-color: rgb(117, 142, 161);
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
+}
+
+#title-and-image {
+    width: 960px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../images/philippine_island_pic.png");
+    filter: grayscale(0.75);
+    font-size: 25px;
 }
 
 header {
+    background-color: #4ecdc1;
+    height: 45px;
     text-align: center;
+}
+
+section {
+    background-color: #ffffff;
+    text-align: center;
+    border-style: double;
+    border-width: 0px 0px 5px 0px;
+    border-color: #4ecdc1;
+}
+
+footer{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 #page-title {
-    /* background-color: #269759; */
-    text-align: center;
-    padding: 10px;
+    /* background-color: #d9d9d9; */
+    text-align: left;
+    /* height: 130px; */
+    padding: 5px 55px 5px 55px;
+    border-style: double;
+    border-width: 0px 0px 5px 0px;
+    border-color: #4ecdc1;
 }
 
 .content {
+    display: inline-block;
+    background-color: white;
     font-size: 16pt;
     overflow: auto;
-    /* background-color: #2cae66; */
-    margin: 20px auto 20px auto;
-    border: #000000;
-    border-width: 1px;
+    margin: 5px 10px;
+    padding: 20px;
+    /* height: 500px; */
+    /* border-width: 1px;
     border-style: solid;
+    border-color: #000000;
     border-radius: 5px;
-    padding: 10px;
+    width: 920px; */
+    text-align: left;
 }
 
 .column1, .column2{
-    width: 460px;
-    margin: 10px;
+    width: 430px;
+    height: 430px;
+    margin: 15px;
     float: left;
 }
 
+
 .single-column{
-    text-align: center;
-    /* width: 920px; */
+    /* text-align: center; */
+    width: 890px;
+    margin: 15px;
 }
 
 .wide {
-    margin: 35px;
-    width: 900px;
+    display: inline-block;
+    width: 860px;
 }
 
-#nav {
-    background-color: rgb(70, 143, 207);
-    margin: 10px auto 10px auto;
+nav {
+    /* margin: 10px auto 10px auto; */
     padding: 10px 10px 10px 10px;
+    /* background-color: #7fc4ff5e; */
 }
 
-#nav h3, ul{
+nav h3, ul{
     display: inline;
 }
 
-#nav-list li{
+nav li{
     display: inline;
     padding: 5px;
 }
 
 #references {
-    /* background-color: #edd94c; */
-    padding: 10px;
-    margin: 5px;
+    display: inline-block;
+    text-align: left;
+    width: 960px;
+    /* background-color: #ffffff; */
+    margin: 5px 10px;
+    padding: 0px 35px 0px;
+}
+
+#latest-texts {
+    margin: 5px 20px;
+    padding: 5px 35px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
 }
 
 ul {
