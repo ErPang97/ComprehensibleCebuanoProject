@@ -1,3 +1,7 @@
+/* @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } */
+
 header, footer {
     display: block;
 }
@@ -6,12 +10,13 @@ body {
     font-family: sans-serif;
     color: rgb(0, 0, 0);
     background-color: rgb(117, 142, 161);
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     margin: auto;
 }
 
 #title-and-image {
-    width: 960px;
+    /* width: 95%; */
     height: 300px;
     text-align: center;
     padding: 20px;
@@ -35,60 +40,73 @@ section {
 }
 
 footer{
-    text-align: center;
     background-color: #ffffff;
     padding: 10px;
 }
 
 #page-title {
-    /* background-color: #d9d9d9; */
-    text-align: left;
-    /* height: 130px; */
+    /* text-align: left; */
     padding: 5px 55px 5px 55px;
     border-style: double;
     border-width: 0px 0px 5px 0px;
     border-color: #4ecdc1;
 }
 
-.content {
+.content{
     display: inline-block;
     background-color: white;
     font-size: 14pt;
     overflow: auto;
     margin: 5px 10px;
-    padding: 20px;
-    /* height: 500px; */
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 5px;
-    width: 920px; */
-    text-align: left;
+    /* padding: 20px; */
+    width: 91%; 
+    text-align: center;
 }
 
-.column1, .column2{
-    width: 430px;
-    height: 430px;
-    margin: 15px;
-    float: left;
-}
 
 
 .single-column{
-    /* text-align: center; */
-    width: 890px;
     margin: 15px;
 }
 
+
+@media screen and (min-width: 901px){
+    .column1, .column2{
+        width: 43%;
+        margin: 15px;
+        float: left;
+    }
+    #page-title {
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .column1, .column2 {
+        display: inline-block;
+        width: 95%;
+    }   
+}
+
+@media screen and (max-width: 900px)
+and (min-width: 460px){
+    .column1, .column2 {
+        display: inline-block;
+        width: 70%;
+        min-width: 370px;
+        max-width: 430px;
+    }   
+}
+
+
 .wide {
     display: inline-block;
-    width: 860px;
+    width: 90%;
 }
 
 nav {
-    /* margin: 10px auto 10px auto; */
     padding: 10px 10px 10px 10px;
-    /* background-color: #7fc4ff5e; */
 }
 
 nav h3, ul{
@@ -100,11 +118,22 @@ nav li{
     padding: 5px;
 }
 
+@media screen and (max-width: 550px) {
+    nav h3, li{
+        display: block
+    }
+    nav ul {
+        padding: 0;
+    }
+    header {
+        height:20%;
+        max-height: 100px;
+    }
+}
+
 #references {
     display: inline-block;
     text-align: left;
-    width: 960px;
-    /* background-color: #ffffff; */
     margin: 5px 10px;
     padding: 0px 35px 0px;
 }
