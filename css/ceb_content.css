@@ -63,12 +63,9 @@ footer{
     text-align: center;
 }
 
-
-
 .single-column{
     margin: 15px;
 }
-
 
 @media screen and (min-width: 901px){
     .column1, .column2{
@@ -151,4 +148,16 @@ p {
 
 ul {
     list-style-position: inside;
+}
+
+#page-list{
+    list-style: none;
+}
+
+.sub-page {
+    display: none;
+}
+
+.active {
+    display: block;
 }
