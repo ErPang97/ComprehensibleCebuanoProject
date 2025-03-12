@@ -1,5 +1,9 @@
 
+/**
+ * Retrives the subpage list items from the document
+ */
 let pageNumberList = document.querySelectorAll('#page-list > li');
+
 
 var activePageNumber;
 var anchor;
@@ -8,8 +12,8 @@ var activeSubPage;
 var pageNumber;
 
 /**
- * 
- * @param {*} e 
+ * Retrieves the element that triggered the event, the target property.
+ * @param {*} e - the triggered event
  * @returns 
  */
 function getTarget(e) {
@@ -17,8 +21,10 @@ function getTarget(e) {
 }
 
 /**
- * 
- * @param {*} e 
+ * When the anchor tag corresponding to a page number is clicked on,
+ * set the page that it references to the "active" class, and remove
+ * the "active" class from the current page.
+ * @param {*} e - the triggered Event
  */
 function activateLink(e) {
 
@@ -45,12 +51,12 @@ function activateLink(e) {
     }
 }
 
-console.log(pageNumberList.length);
-
+// loop through the pageNumberList, attaching event listeners 
+// to each
 for(let i = 0; i < pageNumberList.length; i++){
     pageNumber = pageNumberList[i]; 
-    // sets a variable activePageNumber to the page element
-    // that has a classname active
+    // sets a variable activePageNumber to the list element
+    // that has has the "active" class
     console.log(pageNumber);
 
     if(pageNumber.classList.contains('active')) {
@@ -60,15 +66,13 @@ for(let i = 0; i < pageNumberList.length; i++){
         activeSubPage = document.querySelector(activePageLink);
     }
 
-    if (pageNumber.addEventListener) {
-        pageNumber.addEventListener('click', function(e) {
+    if (pageNumber.firstElementChild.addEventListener) {
+        pageNumber.firstElementChild.addEventListener('click', function(e) {
             activateLink(e);
         }, false);
     } else {
-        pageNumber.attachEvent('onclick', function(e) {
+        pageNumber.firstElementChild.attachEvent('onclick', function(e) {
             activateLink(e);
         }, false);
     }
-
-
 }

@@ -99,7 +99,7 @@ and (min-width: 460px){
 
 .wide {
     display: inline-block;
-    width: 90%;
+    width: 100%;
 }
 
 nav {
@@ -152,6 +152,10 @@ ul {
 
 #page-list{
     list-style: none;
+    padding: inherit;
+}
+#page-list li {
+    display: inline;
 }
 
 .sub-page {
@@ -159,5 +163,5 @@ ul {
 }
 
 .active {
-    display: block;
+    display: inline-block;
 }
